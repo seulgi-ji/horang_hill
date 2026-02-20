@@ -1,0 +1,65 @@
+/* 공통 디자인 common css */
+/* header, footer */
+body {}
+#wrap {}
+#wrap header {
+    background-color: rgba(0,0,0,0.9);
+    height: 70px; padding: 0 80px;
+    min-width: 1220px;
+    display: flex;/* h1,nav 정렬 */
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* 스크롤 이동시 고정 */
+    position: fixed; left: 0; top: 0; z-index: 999; width: 100%;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap nav {}
+/* 호랑가시나무언덕소개~고객센터까지 모든 gnb + lnb 공통 선택자 */
+#wrap nav #gnb {
+    display: flex;/* li */
+    flex-flow: row nowrap; gap:20px;
+    align-items: center;
+}
+#wrap nav #gnb a:hover {
+    color: yellow !important;
+} /* 공통 a */
+#wrap nav #gnb > li {
+    position: relative; /* 첫번째 서브 기준 */
+}
+#wrap nav #gnb > li:hover .gnb_depth2 {display: block;}
+#wrap nav #gnb > li > a {
+    color: #fff;
+    background-color: aquamarine;
+    line-height: 70px; display: block;
+}/* line 20 */
+#wrap nav #gnb > li .gnb_depth2 {  /* 첫번째 서브 */
+    background-color: blue;
+    position: absolute;
+    width: 160px;
+    left: 50%; transform:translateX(-50%); /* absolute 부모 x축 정중앙 */
+    display: none;
+}
+#wrap nav #gnb > li .gnb_depth2 > li:hover .gnb_depth3 {display: block;}
+#wrap nav #gnb > li .gnb_depth2 > li {}
+#wrap nav #gnb > li .gnb_depth2 > li > a { 
+    color: #fff;
+    display: block; line-height: 46px;
+    text-align: center;
+}
+#wrap nav #gnb > li .gnb_depth2 > li > .gnb_depth3 {
+    display: none;
+    background-color: #555;
+}
+#wrap nav #gnb > li .gnb_depth2 > li > .gnb_depth3 li { border-bottom: 1px;}
+#wrap nav #gnb > li .gnb_depth2 > li > .gnb_depth3 li a {
+    color: #fff;
+    display: block;
+    line-height: 46px;
+    text-align: center;
+}
+/* ================================================================= main 1. footer */
+#wrap footer {}
+#wrap footer p {}
