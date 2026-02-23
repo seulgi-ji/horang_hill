@@ -54,7 +54,7 @@
                         <a href="#">예약안내</a>
                         <ul class="gnb_depth2">
                             <li><a href="#">실시간예약</a></li>
-                            <li>><a href="#">예약확인/취소</a>
+                            <li><a href="#">예약확인/취소</a>
                                 <ul class="gnb_depth3">
                                     <li><a href="#">예약조회</a></li>
                                     <li><a href="#">취소신청</a></li>
@@ -112,7 +112,7 @@
                         <div class="room_type">
                             <a href="#">
                                 <span class="name">포사이드방<span>(2/3인)</span></span>
-                                <img src="#" alt="">
+                                <img src="./img/arrowdown.png" alt="">
                             </a>
                             <div class="room_open">
                                 <a href="#"><span class="name">서로득방<span>(3/4인)</span></span></a>
@@ -137,7 +137,7 @@
                             <div class="chk_in">
                                 <a href="#">
                                     <span class="date">2026-02-20</span>
-                                    <img src="#" alt="">
+                                    <img src="./img/arrowdown.png" alt="">
                                 </a>
                             </div>
                             <!-- <p>
@@ -150,7 +150,7 @@
                             </p> -->
                         </div>
                         <div class="day">
-                            <img src="#" alt="달">
+                            <img src="./img/moon.png" alt="달">
                             <em>10박</em>
                         </div>
                         <div class="out">
@@ -158,7 +158,7 @@
                             <div class="chk_out">
                                 <a href="#">
                                     <span class="date">2026-02-30</span>
-                                    <img src="#" alt="">
+                                    <img src="./img/arrowdown.png" alt="">
                                 </a>
                             </div>
                             <!-- <p>
@@ -172,30 +172,129 @@
                     </div>
                     <div class="person">
                         <h2>인원</h2>
-                        <ul class="numder">
+                        <ul class="number">
                             <li>
-                                <button type="button" id="adult_add" class="number_btn"><img src="#" alt="증가"></button>
+                                <button type="button" id="adult_add" class="number_btn"><img src="./img/plus.png" alt="증가"></button>
                                 <span>
                                     <label for="adult">성인</label>
                                     <input type="number" id="adult" name="adult" value="1">
                                 </span>
-                                <button type="button" id="adult_remove" class="number_btn"><img src="#" alt="감소"></button>
+                                <button type="button" id="adult_remove" class="number_btn"><img src="./img/minus.png" alt="감소"></button>
                             </li>
                             <li>
-                                <button type="button" id="adult_add" class="number_btn"><img src="#" alt="증가"></button>
+                                <button type="button" id="kid_add" class="number_btn"><img src="./img/plus.png" alt="증가"></button>
                                 <span>
                                     <label for="kid">어린이</label>
                                     <input type="number" id="kid" name="kid" value="1">
                                 </span>
-                                <button type="button" id="adult_remove" class="number_btn"><img src="#" alt="감소"></button>
+                                <button type="button" id="kid_remove" class="number_btn"><img src="./img/minus.png" alt="감소"></button>
                             </li>
                         </ul>
                     </div>
-                    <p><button type="submit" id="search">검색</button></p>
+                    <p><button type="submit" id="search_btn">검색</button></p>
                     <!-- 요소를 클릭시 특정 페이지로 바로 이동하면 <a> -->
                     <!-- 요소를 클릭시 조건에 따라 분기가 갈린다면 <button> -->
                     <!-- 버튼 종류 : submit(서버전송), button(전송 포함 범용)  -->
                 </form>
+            </div>
+            <div id="introduction">
+                <div class="info">
+                    <h2>양림동과 호랑가시나무언덕</h2>
+                    <p>양림동은 20세기 초 서구 선교사들이 광주 최초의 근대식 학교와 병원 등을 설립하면서 본격적인 광주근대화가 시작된 곳으로 광주의 근대역사가 살아 숨 쉬는 역사문화마을입니다. <br> 오랜 세월에도 불구하고 온전하게 보존된 서구식 건축물들과 전통 한옥이 공존하고 있어 광주에서 가장 이국적인 분위기를 느낄 수 있는 곳입니다.</p>
+                    <img src="./img/info_photo.jpg" alt="소개">
+                </div>
+            </div>
+            <div id="tourist_attraction">
+                <div id="tourism">
+                    <div class="tourism_title">
+                        <h2>주변 관광지</h2>
+                        <p>호랑가시나무언덕 게스트하우스 외부 및 주변전경입니다.</p>
+                    </div>
+                    <ul>
+                        <li class="tourism_place">
+                            <a href="#">
+                                <img src="./img/traval1.jpg" alt="윈스브로우홀">
+                                <p>윈스 브로우 홀</p>
+                            </a>
+                        </li>
+                        <li class="tourism_place">
+                            <a href="#">
+                                <img src="./img/traval2.jpg" alt="양림동문화마을">
+                                <p>양림동 문화마을</p>
+                            </a>
+                        </li>
+                        <li class="tourism_place">
+                            <a href="#">
+                                <img src="./img/traval3.jpg" alt="오웬기념관">
+                                <p>오웬 기념관</p>
+                            </a>
+                        </li>
+                        <li class="tourism_place">
+                            <a href="#">
+                                <img src="./img/traval4.jpg" alt="호항가시나무언덕기념관">
+                                <p>호랑가시나무언덕 기념관</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#">더 많은 관광지 둘러보기</a>
+                </div>
+            </div>
+            <div id="room_information">
+                <div id="reservation">
+                    <div class="reservation_title">
+                        <h2>객실 및 예약 안내</h2>
+                        <p>각 방을 클릭하면 자세한 정보를 보실 수 있습니다. 가격은 성수기/비성수기 동일합니다. 자세한건 예약안내(실시간 예약하기)를 클릭하여 확인하세요.</p>
+                    </div>
+                    <div class="roominfo">
+                        <ul>
+                            <li class="reservation_type">
+                                <a href="#">
+                                    <img src="./img/room1.jpg" alt="포사이드방">
+                                    <p>포사이드방</p>
+                                    <p>1층 2인(최대4인 방)
+                                    <br>시원한 큰 창과 남향으로 햇빛이 잘들어오는 예쁜 방입니다.</p>
+                                </a>
+                            </li>
+                            <li class="reservation_type">
+                                <a href="#">
+                                    <img src="./img/room2.jpg" alt="오월순방">
+                                    <p>오월순 방</p>
+                                </a>
+                            </li>
+                            <li class="reservation_type">
+                                <a href="#">
+                                    <img src="./img/room3.jpg" alt="배유지방">
+                                    <p>배유지방</p>
+                                </a>
+                            </li>
+                            <li class="reservation_type">
+                                <a href="#">
+                                    <img src="./img/room4.jpg" alt="오웬방">
+                                    <p>오웬방</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">실시간 예약하기</a>
+                </div>
+            </div>
+            <div id="map_find">
+                <div id="maprow">
+                    <div class="maprow_title">
+                        <h2>게스트 하우스 찾아오시는 길</h2>
+                        <p>예약문의 010-1234-5678</p>
+                    </div>
+                    <img src="./img/map.jpg" alt="지도">
+                    <div class="public_transport">
+                        <h2>시내버스</h2>
+                        <p>1 기독병원 정류장 → 게스트하우스 (도보 10분) 버스노선 : 금남55 <br>
+                        2 양림휴먼시아2차 정류장 → 게스트하우스 (도보 30분) <br>
+                        버스노선 : 순환01, 진원17, 지원25, 봉선27, 문흥48, 금남59, 봉선76, 첨단95, 송정98, 화순217, 화순218, 화순218-1</p>
+                        <h2>지하철</h2>
+                        <p>3 남광주역 3번 출구 → 게스트하우스 (도보 25분) <br>
+                        4 문화전당역 1, 3번 출구 → 게스트하우스 (도보 35분)</p>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
